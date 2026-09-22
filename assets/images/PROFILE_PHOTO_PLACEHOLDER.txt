@@ -1,0 +1,1 @@
+Replace the profile photo area in the hero with your own professional photo later. Recommended file: profile.jpg (square, 800x800px or larger).
