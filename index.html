@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nesrine Bouzidi — AI Engineer, researcher and technology enthusiast.">
+  <meta name="description" content="Nesrine Bouzid — AI Engineer, researcher and technology enthusiast.">
   <meta name="theme-color" content="#0b0d12">
-  <title>Nesrine Bouzidi | AI Engineer</title>
+  <title>Nesrine Bouzid | AI Engineer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
         <option value="en">EN</option><option value="fr">FR</option><option value="ar">AR</option>
         <option value="de">DE</option><option value="es">ES</option>
       </select>
-      <a class="button small" href="assets/Nesrine_Bouzidi_CV.pdf" download data-i18n="nav.download">Download CV</a>
+      <a class="button small" href="assets/Nesrine_Bouzid_CV.pdf" download data-i18n="nav.download">Download CV</a>
     </div>
   </nav>
 </header>
@@ -39,7 +39,7 @@
   <div class="container hero-grid">
     <div>
       <div class="eyebrow"><span></span> AI ENGINEERING · RESEARCH · INNOVATION</div>
-      <h1>Nesrine<br><em>Bouzidi</em></h1>
+      <h1>Nesrine<br><em>Bouzid</em></h1>
       <p class="hero-role" data-i18n="hero.role">AI Engineer · Researcher · Technology Enthusiast</p>
       <p class="hero-copy" data-i18n="hero.copy">AI Engineering student at ENSIA with a strong academic record, international technology experience, and research interests spanning Artificial Intelligence, Reinforcement Learning, Agentic AI and 5G/6G systems.</p>
       <div class="hero-actions">
@@ -52,9 +52,11 @@
       </div>
     </div>
     <div class="hero-art">
-      <div class="orb"></div><div class="ring r1"></div><div class="ring r2"></div>
+  <!--    <div class="orb"></div>
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>-->
       <div class="profile-frame">
-        <img src="assets/images/profile.jpg" alt="Nesrine Bouzidi" onerror="this.style.display='none';document.querySelector('.profile-fallback').style.display='grid';">
+        <img src="assets/images/profile.jpg" alt="Nesrine Bouzid" onerror="this.style.display='none';document.querySelector('.profile-fallback').style.display='grid';">
         <div class="profile-fallback">NB</div>
       </div>
     </div>
@@ -85,7 +87,21 @@
   <div class="container">
     <div class="section-head"><div><p class="eyebrow">02 · <span data-i18n="experience.label">EXPERIENCE & ACHIEVEMENTS</span></p><h2 data-i18n="experience.title">Milestones that shaped my journey.</h2></div></div>
     <div class="cards">
-      <article class="card featured" onclick="openDetail('huawei')">
+
+<article class="card featured" onclick="openDetail('huawei')">
+  <div class="card-image photo" style="background-image:url('assets/images/profile.jpg')"></div>
+  <div class="card-body">
+    <small data-i18n="ach.huawei.meta">2026 · SHENZHEN, CHINA</small>
+    <h3 data-i18n="ach.huawei.title">Huawei ICT Competition — Global Grand Prize</h3>
+    <p data-i18n="ach.huawei.card">International competition achievement with a focus on the AI side of a time-series computer-failure prediction challenge.</p>
+    <span class="more" data-i18n="common.details">View details →</span>
+  </div>
+</article>
+      <article class="card featured" onclick="openDetail('president')">
+        <div class="card-image photo" style="background-image:url('assets/images/achievement-huawei.svg')"></div>
+        <div class="card-body"><small data-i18n="ach.huawei.meta">2026 · SHENZHEN, CHINA</small><h3 data-i18n="ach.huawei.title">Huawei ICT Competition — Global Grand Prize</h3><p data-i18n="ach.huawei.card">International competition achievement with a focus on the AI side of a time-series computer-failure prediction challenge.</p><span class="more" data-i18n="common.details">View details →</span></div>
+      </article>
+      <article class="card featured" onclick="openDetail('master in managment')">
         <div class="card-image photo" style="background-image:url('assets/images/achievement-huawei.svg')"></div>
         <div class="card-body"><small data-i18n="ach.huawei.meta">2026 · SHENZHEN, CHINA</small><h3 data-i18n="ach.huawei.title">Huawei ICT Competition — Global Grand Prize</h3><p data-i18n="ach.huawei.card">International competition achievement with a focus on the AI side of a time-series computer-failure prediction challenge.</p><span class="more" data-i18n="common.details">View details →</span></div>
       </article>
@@ -93,7 +109,7 @@
         <div class="card-image photo" style="background-image:url('assets/images/achievement-seeds.svg')"></div>
         <div class="card-body"><small data-i18n="ach.seeds.meta">INTERNATIONAL EXPERIENCE</small><h3 data-i18n="ach.seeds.title">Huawei Seeds for the Future</h3><p data-i18n="ach.seeds.card">Represented Algeria in Shenzhen and explored Huawei technologies, 5G/6G, cloud, AI and innovation.</p><span class="more" data-i18n="common.details">View details →</span></div>
       </article>
-      <article class="card" onclick="openDetail('craag')">
+      <article class="card" onclick="openDetail('research student')">
         <div class="card-image photo" style="background-image:url('assets/images/achievement-craag.svg')"></div>
         <div class="card-body"><small data-i18n="ach.craag.meta">RESEARCH EXPERIENCE · ALGERIA</small><h3 data-i18n="ach.craag.title">AI Research Internship — CRAAG</h3><p data-i18n="ach.craag.card">Research experience at the Research Center in Astronomy, Astrophysics and Geophysics.</p><span class="more" data-i18n="common.details">View details →</span></div>
       </article>
@@ -110,20 +126,23 @@
     <div class="section-head"><div><p class="eyebrow">03 · <span data-i18n="projects.eyebrow">PROJECTS</span></p><h2 data-i18n="projects.title">Selected work.</h2></div><span class="muted" data-i18n="projects.subtitle">AI · Research · Software</span></div>
     <div class="project-grid">
       <article class="project" onclick="openDetail('sonatrach')"><div class="project-cover" style="background-image:url('assets/images/project-sonatrach.svg')"></div><div class="project-num">01</div><h3 data-i18n="proj.sonatrach.title">Sonatrach Lithology Prediction</h3><p data-i18n="proj.sonatrach.card">Machine learning applied to petroleum and geological data for lithology prediction.</p><div class="tags"><span>ML</span><span>Python</span><span>Geoscience</span></div><b data-i18n="common.explore">Explore project →</b></article>
-      <article class="project" onclick="openDetail('automotive')"><div class="project-cover" style="background-image:url('assets/images/project-automotive.svg')"></div><div class="project-num">02</div><h3 data-i18n="proj.automotive.title">AI Automotive Spare-Parts Platform</h3><p data-i18n="proj.automotive.card">Concept for an intelligent multilingual platform combining AI search, RAG, stock, suppliers and workflow automation.</p><div class="tags"><span>RAG</span><span>AI Agents</span><span>n8n</span><span>Docker</span></div><b data-i18n="common.explore">Explore project →</b></article>
+      <article class="project" onclick="openDetail('csj')"><div class="project-cover" style="background-image:url('assets/images/project-sonatrach.svg')"></div><div class="project-num">01</div><h3 data-i18n="proj.sonatrach.title">Sonatrach Lithology Prediction</h3><p data-i18n="proj.sonatrach.card">Machine learning applied to petroleum and geological data for lithology prediction.</p><div class="tags"><span>ML</span><span>Python</span><span>Geoscience</span></div><b data-i18n="common.explore">Explore project →</b></article>
       <article class="project" onclick="openDetail('pfe')"><div class="project-cover" style="background-image:url('assets/images/project-pfe.svg')"></div><div class="project-num">03</div><h3 data-i18n="proj.pfe.title">5G Integration with Augmented Reality</h3><p data-i18n="proj.pfe.card">Current academic direction exploring the integration of next-generation connectivity with AR.</p><div class="tags"><span>5G</span><span>AR</span><span>Research</span></div><b data-i18n="common.explore">Explore project →</b></article>
-    </div>
+      <article class="project" onclick="openDetail('education')"><div class="project-cover" style="background-image:url('assets/images/project-sonatrach.svg')"></div><div class="project-num">01</div><h3 data-i18n="proj.sonatrach.title">Sonatrach Lithology Prediction</h3><p data-i18n="proj.sonatrach.card">Machine learning applied to petroleum and geological data for lithology prediction.</p><div class="tags"><span>ML</span><span>Python</span><span>Geoscience</span></div><b data-i18n="common.explore">Explore project →</b></article>
+      <article class="project" onclick="openDetail('pos')"><div class="project-cover" style="background-image:url('assets/images/project-sonatrach.svg')"></div><div class="project-num">01</div><h3 data-i18n="proj.sonatrach.title">Sonatrach Lithology Prediction</h3><p data-i18n="proj.sonatrach.card">Machine learning applied to petroleum and geological data for lithology prediction.</p><div class="tags"><span>ML</span><span>Python</span><span>Geoscience</span></div><b data-i18n="common.explore">Explore project →</b></article>
+      <article class="project" onclick="openDetail('automotive')"><div class="project-cover" style="background-image:url('assets/images/project-automotive.svg')"></div><div class="project-num">02</div><h3 data-i18n="proj.automotive.title">AI Automotive Spare-Parts Platform</h3><p data-i18n="proj.automotive.card">Concept for an intelligent multilingual platform combining AI search, RAG, stock, suppliers and workflow automation.</p><div class="tags"><span>RAG</span><span>AI Agents</span><span>n8n</span><span>Docker</span></div><b data-i18n="common.explore">Explore project →</b></article>
+     </div>
   </div>
 </section>
 
 <section id="cv" class="section cv-section">
   <div class="container cv-grid">
-    <div><p class="eyebrow">04 · <span data-i18n="cv.eyebrow">CV</span></p><h2 data-i18n="cv.title">Academic excellence.<br>Technical ambition.</h2><p class="prose" data-i18n="cv.copy">A concise overview of my education, research experience, international achievements and technical interests.</p><a class="button" href="assets/Nesrine_Bouzidi_CV.pdf" download data-i18n="cv.download">Download CV ↓</a></div>
+    <div><p class="eyebrow">04 · <span data-i18n="cv.eyebrow">CV</span></p><h2 data-i18n="cv.title">Academic excellence.<br>Technical ambition.</h2><p class="prose" data-i18n="cv.copy">A concise overview of my education, research experience, international achievements and technical interests.</p><a class="button" href="assets/Nesrine_Bouzid_CV.pdf" download data-i18n="cv.download">Download CV ↓</a></div>
     <div class="timeline">
       <div><span data-i18n="cv.edu">EDUCATION</span><h3 data-i18n="cv.ensia">ENSIA · AI Engineering</h3><p data-i18n="cv.ensiaDesc">5th year · Ranked 1st in promotion for four consecutive years</p></div>
       <div><span data-i18n="cv.edu">EDUCATION</span><h3 data-i18n="cv.ehec">EHEC · Commerce & Management</h3><p data-i18n="cv.ehecDesc">Master's studies alongside AI Engineering</p></div>
-      <div><span data-i18n="cv.research">RESEARCH</span><h3 data-i18n="cv.craag">CRAAG · AI Research Internship</h3><p data-i18n="cv.craagDesc">Research Center in Astronomy, Astrophysics and Geophysics</p></div>
-      <div><span data-i18n="cv.academic">ACADEMIC</span><h3 data-i18n="cv.bac">Mathematics Baccalauréat · 18.91/20</h3><p data-i18n="cv.bacDesc">3rd nationally</p></div>
+      <div><span data-i18n="cv.research">RESEARCH</span><h3 data-i18n="cv.craag">Cooncordia university · AI Research Internship</h3><p data-i18n="cv.craagDesc">Research Center in Astronomy, Astrophysics and Geophysics</p></div>
+      <div><span data-i18n="cv.academic">ACADEMIC</span><h3 data-i18n="cv.bac">Huaweui ICT academi</h3><p data-i18n="cv.bacDesc">3rd nationally</p></div>
     </div>
   </div>
 </section>
@@ -140,7 +159,7 @@
 </section>
 </main>
 
-<footer><div class="container footer"><strong>Nesrine Bouzidi<span>.</span></strong><span>© 2026 Nesrine Bouzidi</span><span data-i18n="footer.role">AI Engineer · Researcher</span></div></footer>
+<footer><div class="container footer"><strong>Nesrine Bouzid<span>.</span></strong><span>© 2026 Nesrine Bouzid</span><span data-i18n="footer.role">AI Engineer · Researcher</span></div></footer>
 
 <div id="modal" class="modal" aria-hidden="true"><div class="modal-inner"><button class="close" onclick="closeDetail()">×</button><div id="modal-content"></div></div></div>
 
