@@ -12,7 +12,7 @@
 .hero{position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:500px;height:500px;border-radius:50%;border:1px solid rgba(17,19,24,.08);right:-180px;bottom:-280px;box-shadow:0 0 0 70px rgba(17,19,24,.025),0 0 0 140px rgba(17,19,24,.018);pointer-events:none}
 .card,.project,.stats-grid>div{position:relative}.card:after{content:"";position:absolute;top:0;left:0;width:0;height:2px;background:var(--accent);transition:.35s}.card:hover:after{width:100%}
 
-.gallery-title{margin-top:48px;font-size:20px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline}.gallery-title small{font-size:10px;color:var(--muted);font-weight:500}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}.gallery-slot{height:180px;border:1px dashed #aaa79e;background:linear-gradient(135deg,#ddd9cf,#f3f1eb);display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;overflow:hidden;color:#777}.gallery-slot:before{content:"";position:absolute;width:120px;height:120px;border:1px solid #bbb7ae;border-radius:50%;opacity:.55}.gallery-slot span{z-index:1;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em}.slot-num{position:absolute;top:10px;left:12px;font-size:10px;color:#999;z-index:2}.gallery-slot:hover{background:linear-gradient(135deg,#d5d1c7,#fff);border-color:#777}@media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery-slot{height:150px}}
+.gallery-title{margin-top:48px;font-size:20px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline}.gallery-title small{font-size:10px;color:var(--muted);font-weight:500}.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}.gallery-item{position:relative;overflow:hidden;border:1px solid rgba(17,19,24,.12);background:rgba(17,19,24,.03);margin:0;height:200px}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}.gallery-item figcaption{position:absolute;left:10px;bottom:10px;background:rgba(11,13,18,.7);color:#fff;font-size:10px;font-weight:700;letter-spacing:.1em;padding:4px 7px;border-radius:999px}.gallery-item:hover img{transform:scale(1.03)}.gallery-item img{transition:transform .35s ease}@media(max-width:600px){.gallery{grid-template-columns:1fr}.gallery-item{height:170px}}
 
 
 /* ===== V3 Theme + Profile Photo ===== */
@@ -135,3 +135,59 @@ html[data-theme="dark"] .modal p{color:#b8bbc2}
     width: 220px;
   }
 }
+
+@media (min-width: 901px) {
+  .profile-frame { width: min(450px, 92%); }
+}
+@media (max-width: 900px) {
+  .hero-grid { gap: 0; }
+  .hero-grid > div:first-child { display: contents; }
+  .hero-art { order: 5; }
+  .hero-actions { order: 6; }
+  .quick-links { order: 7; }
+}
+@media (max-width: 520px) {
+  .hero-art { height: auto; transform: none; }
+  .profile-frame { width: min(76vw, 310px); }
+}
+
+.eyebrow span:not(:empty) {
+  display: inline;
+  width: auto;
+  height: auto;
+  margin: 0;
+  background: none;
+  vertical-align: baseline;
+}
+.rtl .eyebrow span:not(:empty) { margin: 0; }
+
+html[data-theme="dark"] .modal .modal-tags span {
+  color: #f4f4f1;
+  background: #242833;
+  border: 1px solid #444b57;
+}
+html[data-theme="dark"] .close {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: #f4f4f1;
+  background: #242833;
+  border: 1px solid #444b57;
+  border-radius: 50%;
+  line-height: 1;
+}
+html[data-theme="dark"] .close:hover { background: #353b47; }
+html[data-theme="dark"] .close:focus-visible { outline: 2px solid #c9a35b; outline-offset: 2px; }
+html[data-theme="dark"] .hero:before {
+  background: linear-gradient(90deg, transparent, #383e49, transparent);
+}
+html[data-theme="dark"] .stats-grid div { border-color: #373d48; }
+html[data-theme="dark"] .timeline { border-color: #373d48; }
+html[data-theme="dark"] .nav-wrap { border-bottom-color: #373d48; }
+html[data-theme="dark"] .nav-actions select { color: #f4f4f1; color-scheme: dark; }
+html[data-theme="dark"] .nav-actions select option { color: #f4f4f1; background-color: #151820; }
+html[data-theme="dark"] .card { border-color: #343a44; }
+.contact-details { display: grid; justify-items: start; gap: 8px; margin-top: 20px; font-size: 14px; font-weight: 600; }
+.contact-details a { text-decoration: underline; text-underline-offset: 3px; }
+.contact-details a:hover { opacity: .65; }
