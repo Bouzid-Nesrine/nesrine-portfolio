@@ -1,1 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#151820"/><g stroke="#d8ff3e" stroke-opacity=".5" fill="none"><path d="M0 580 C140 480 210 650 340 500 S580 410 700 520 S950 620 1200 350" stroke-width="5"/><path d="M0 640 C150 550 240 700 380 570 S600 500 760 600 S1020 680 1200 450" stroke="#fff" stroke-opacity=".15" stroke-width="2"/></g><text x="70" y="120" fill="#d8ff3e" font-family="Arial" font-size="28" letter-spacing="7">MACHINE LEARNING</text><text x="70" y="690" fill="#fff" font-family="Arial" font-size="65" font-weight="700">LITHOLOGY PREDICTION</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="sonatrack-bg" x1="120" y1="20" x2="1090" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121817"/>
+      <stop offset="1" stop-color="#27332e"/>
+    </linearGradient>
+    <linearGradient id="well-line" x1="260" y1="300" x2="1030" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d8ff3e"/>
+      <stop offset="1" stop-color="#f0bd72"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#sonatrack-bg)"/>
+  <circle cx="1065" cy="82" r="205" fill="#d8ff3e" fill-opacity=".06"/>
+  <circle cx="1065" cy="82" r="145" stroke="#d8ff3e" stroke-opacity=".17"/>
+  <path d="M70 130H1130M70 470H1130" stroke="#fff" stroke-opacity=".13"/>
+  <text x="76" y="91" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="4">DATA MINING · WELL LOGS</text>
+  <text x="76" y="182" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="58" font-weight="700" letter-spacing="-2">SONATRACH</text>
+  <text x="78" y="222" fill="#b9c3bc" font-family="Arial,sans-serif" font-size="19">Well productivity estimation · ENSIA team project</text>
+  <g transform="translate(78 274)">
+    <rect width="235" height="132" rx="12" fill="#fff" fill-opacity=".055" stroke="#fff" stroke-opacity=".14"/>
+    <text x="20" y="32" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">01 · FORECAST</text>
+    <text x="20" y="68" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="25" font-weight="700">LSTM</text>
+    <text x="20" y="99" fill="#b9c3bc" font-family="Arial,sans-serif" font-size="14">GR prediction · R² 0.973</text>
+    <rect x="250" width="235" height="132" rx="12" fill="#fff" fill-opacity=".055" stroke="#fff" stroke-opacity=".14"/>
+    <text x="270" y="32" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">02 · CLUSTER</text>
+    <text x="270" y="68" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="25" font-weight="700">DBSCAN</text>
+    <text x="270" y="99" fill="#b9c3bc" font-family="Arial,sans-serif" font-size="14">Lithology · PCA</text>
+    <rect x="500" width="235" height="132" rx="12" fill="#fff" fill-opacity=".055" stroke="#fff" stroke-opacity=".14"/>
+    <text x="520" y="32" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">03 · ESTIMATE</text>
+    <text x="520" y="68" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="25" font-weight="700">DELTA-T</text>
+    <text x="520" y="99" fill="#b9c3bc" font-family="Arial,sans-serif" font-size="14">Feature selection · ANN</text>
+    <rect x="750" width="235" height="132" rx="12" fill="#fff" fill-opacity=".055" stroke="#fff" stroke-opacity=".14"/>
+    <text x="770" y="32" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">04 · GENERALIZE</text>
+    <text x="770" y="68" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="25" font-weight="700">WITH CARE</text>
+    <text x="770" y="99" fill="#b9c3bc" font-family="Arial,sans-serif" font-size="14">Field-specific geology matters</text>
+  </g>
+  <path d="M80 439C140 422 194 451 249 435C303 419 347 434 401 427C457 420 501 441 554 430C607 419 651 436 704 426C754 417 800 438 850 427C899 416 946 437 1000 423C1044 412 1084 421 1120 409" stroke="url(#well-line)" stroke-width="3"/>
+  <g fill="#d8ff3e">
+    <circle cx="249" cy="435" r="4"/><circle cx="401" cy="427" r="4"/><circle cx="554" cy="430" r="4"/><circle cx="704" cy="426" r="4"/><circle cx="850" cy="427" r="4"/><circle cx="1000" cy="423" r="4"/>
+  </g>
+  <text x="78" y="526" fill="#b9c3bc" font-family="Arial,sans-serif" font-size="13">EXPLORE · FORECAST · CLUSTER · ESTIMATE</text>
+</svg>

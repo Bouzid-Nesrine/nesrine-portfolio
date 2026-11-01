@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <rect width="1200" height="600" fill="#111318"/>
+  <circle cx="1020" cy="74" r="220" fill="#c9a35b" fill-opacity=".08"/>
+  <circle cx="1020" cy="74" r="155" stroke="#c9a35b" stroke-opacity=".22"/>
+  <path d="M75 132H1125M75 468H1125" stroke="#fff" stroke-opacity=".12"/>
+  <text x="76" y="92" fill="#c9a35b" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">RESEARCH IMPACT · NLP</text>
+  <text x="76" y="190" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="64" font-weight="700" letter-spacing="-3">FAIR MINDS</text>
+  <text x="78" y="231" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="20">Field-normalized research intelligence</text>
+  <g stroke="#c9a35b" stroke-width="2">
+    <path d="M236 357H379M438 357H581M640 357H783M842 357H985"/>
+    <path d="m368 348 11 9-11 9M570 348l11 9-11 9M772 348l11 9-11 9M974 348l11 9-11 9"/>
+  </g>
+  <g>
+    <rect x="76" y="298" width="160" height="118" rx="8" fill="#1b1e25" stroke="#41434a"/>
+    <rect x="278" y="298" width="160" height="118" rx="8" fill="#1b1e25" stroke="#41434a"/>
+    <rect x="480" y="298" width="160" height="118" rx="8" fill="#1b1e25" stroke="#41434a"/>
+    <rect x="682" y="298" width="160" height="118" rx="8" fill="#1b1e25" stroke="#41434a"/>
+    <rect x="884" y="298" width="160" height="118" rx="8" fill="#1b1e25" stroke="#41434a"/>
+    <text x="96" y="334" fill="#c9a35b" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">01 · PAPERS</text>
+    <text x="96" y="367" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="18" font-weight="700">OpenAlex</text>
+    <text x="96" y="391" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="13">1.13M curated</text>
+    <text x="298" y="334" fill="#c9a35b" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">02 · TAXONOMY</text>
+    <text x="298" y="367" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="18" font-weight="700">7 domains</text>
+    <text x="298" y="391" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="13">1,449 leaf topics</text>
+    <text x="500" y="334" fill="#c9a35b" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">03 · RETRIEVE</text>
+    <text x="500" y="367" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="18" font-weight="700">MiniLM + RAG</text>
+    <text x="500" y="391" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="13">Top-5 candidates</text>
+    <text x="702" y="334" fill="#c9a35b" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">04 · RE-RANK</text>
+    <text x="702" y="367" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="18" font-weight="700">SciBERT</text>
+    <text x="702" y="391" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="13">34.54% exact match</text>
+    <text x="904" y="334" fill="#c9a35b" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">05 · COMPARE</text>
+    <text x="904" y="367" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="18" font-weight="700">Field-aware RII</text>
+    <text x="904" y="391" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="13">Fairer impact insights</text>
+  </g>
+  <text x="76" y="523" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="14">CLASSIFY · NORMALIZE · COMPARE</text>
+</svg>
