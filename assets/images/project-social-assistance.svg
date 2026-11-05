@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Social assistance matching platform</title>
+  <desc id="description">Donors and community assistance requests connected through a transparent matching network.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#101923"/>
+      <stop offset="1" stop-color="#18383a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d8ff3e"/>
+      <stop offset="1" stop-color="#74d9c2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <circle cx="1000" cy="85" r="220" fill="#74d9c2" fill-opacity=".08"/>
+  <circle cx="1000" cy="85" r="155" stroke="#74d9c2" stroke-opacity=".22"/>
+  <path d="M75 132H1125M75 468H1125" stroke="#fff" stroke-opacity=".12"/>
+  <text x="76" y="92" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="4">SOCIAL IMPACT · INTELLIGENT MATCHING</text>
+  <text x="76" y="190" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="55" font-weight="700" letter-spacing="-2">SUPPORT,</text>
+  <text x="76" y="254" fill="#f7f7f5" font-family="Arial,sans-serif" font-size="55" font-weight="700" letter-spacing="-2">CONNECTED</text>
+  <text x="79" y="300" fill="#b9c9c4" font-family="Arial,sans-serif" font-size="20">Donations matched to community needs</text>
+  <g stroke="url(#accent)" stroke-width="3" stroke-opacity=".85">
+    <path d="M298 388 493 352l205 47 202-74"/>
+    <path d="M298 388 495 439l203-40 202 33"/>
+    <path d="M493 352 495 439"/>
+    <path d="M698 399 698 485"/>
+    <path d="M900 325 900 432"/>
+  </g>
+  <g fill="#132329" stroke="#74d9c2" stroke-width="2">
+    <circle cx="298" cy="388" r="42"/>
+    <circle cx="493" cy="352" r="42"/>
+    <circle cx="495" cy="439" r="42"/>
+    <circle cx="698" cy="399" r="48"/>
+    <circle cx="698" cy="485" r="36"/>
+    <circle cx="900" cy="325" r="42"/>
+    <circle cx="900" cy="432" r="42"/>
+  </g>
+  <g fill="url(#accent)">
+    <circle cx="298" cy="388" r="7"/>
+    <circle cx="493" cy="352" r="7"/>
+    <circle cx="495" cy="439" r="7"/>
+    <circle cx="698" cy="399" r="10"/>
+    <circle cx="698" cy="485" r="7"/>
+    <circle cx="900" cy="325" r="7"/>
+    <circle cx="900" cy="432" r="7"/>
+  </g>
+  <g fill="#f7f7f5" font-family="Arial,sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="298" y="450">DONORS</text>
+    <text x="493" y="300">OFFERS</text>
+    <text x="495" y="505">NEEDS</text>
+    <text x="698" y="473">MATCH</text>
+    <text x="900" y="270">LOCAL</text>
+    <text x="900" y="490">SUPPORT</text>
+  </g>
+  <text x="76" y="523" fill="#a6a9b0" font-family="Arial,sans-serif" font-size="14">RECOMMEND · CONNECT · EMPOWER</text>
+  <text x="1108" y="523" fill="#d8ff3e" font-family="Arial,sans-serif" font-size="14" font-weight="700" text-anchor="end">HIGHER COUNCIL OF YOUTH</text>
+</svg>

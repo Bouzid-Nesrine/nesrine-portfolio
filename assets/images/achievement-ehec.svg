@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#11141b"/>
+      <stop offset=".58" stop-color="#303746"/>
+      <stop offset="1" stop-color="#84909d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#background)"/>
+  <circle cx="920" cy="320" r="245" fill="none" stroke="#d8ff3e" stroke-opacity=".3" stroke-width="2"/>
+  <circle cx="920" cy="320" r="175" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="2"/>
+  <path d="M0 640 Q310 520 620 650 T1200 600 V800H0Z" fill="#0b0d12" opacity=".72"/>
+  <text x="78" y="145" fill="#d8ff3e" font-family="Arial, sans-serif" font-size="30" letter-spacing="8">DUAL MASTER'S DEGREE</text>
+  <text x="72" y="570" fill="#fff" font-family="Arial, sans-serif" font-size="104" font-weight="700">EHEC × ENSIA</text>
+  <text x="80" y="640" fill="#d8ff3e" font-family="Arial, sans-serif" font-size="28" letter-spacing="3">BUSINESS · ARTIFICIAL INTELLIGENCE</text>
+</svg>
