@@ -458,20 +458,31 @@ async function loadGalleryImages(key){
   const folder=galleryFolders[key];
   if(!folder){ return []; }
 
-  const dirUrl=`assets/images/${folder}/`;
+  const baseUrl=new URL(`assets/images/${folder}/`, document.baseURI);
 
   try {
-    const response=await fetch(dirUrl, {cache:"no-store"});
-    if(!response.ok){ return []; }
+    const response=await fetch(new URL("gallery.json", baseUrl), {cache:"no-cache"});
+    if(!response.ok){
+      console.warn(`Could not load gallery manifest for "${key}": HTTP ${response.status}`);
+      return [];
+    }
 
-    const html=await response.text();
-    const paths=[...html.matchAll(/href=["']([^"']+\.(?:png|jpe?g|gif|webp|svg))["']/gi)]
-      .map(match=>match[1].replace(/^\.\//, ""))
-      .filter(Boolean);
+    const filenames=await response.json();
+    if(!Array.isArray(filenames)){
+      console.warn(`Gallery manifest for "${key}" must contain an array of image filenames.`);
+      return [];
+    }
 
-    const normalized=[...new Set(paths.map(path => path.startsWith("http") ? path : `${dirUrl}${path.replace(/^\//, "")}`))];
-    return normalized;
+    const validFilenames=filenames.filter(filename=>
+      typeof filename==="string" &&
+      /^[^/\\?#]+\.(?:png|jpe?g|gif|webp|svg)$/i.test(filename)
+    );
+    if(validFilenames.length!==filenames.length){
+      console.warn(`Gallery manifest for "${key}" contains invalid image filenames; skipping them.`);
+    }
+    return validFilenames.map(filename=>new URL(filename, baseUrl).href);
   }catch(error){
+    console.warn(`Could not read gallery manifest for "${key}".`, error);
     return [];
   }
 }
@@ -486,7 +497,15 @@ async function openDetail(key){window.currentDetailKey=key;
  const bodyHtml=(d.body && (d.body[lang] || d.body.en)) || "";
  const galleryImages=await loadGalleryImages(key);
  const galleryMarkup=buildGalleryMarkup(galleryImages, lang);
- document.getElementById("modal-content").innerHTML=`<div class="label">${d.label[lang]}</div><h2>${d.title[lang]}</h2>${bodyHtml}<div class="modal-tags">${tags}</div>${resourceLinks}${siteButton}${galleryMarkup}`;
+ const modalContent=document.getElementById("modal-content");
+ modalContent.innerHTML=`<div class="label">${d.label[lang]}</div><h2>${d.title[lang]}</h2>${bodyHtml}<div class="modal-tags">${tags}</div>${resourceLinks}${siteButton}${galleryMarkup}`;
+ modalContent.querySelectorAll(".gallery-item img").forEach(image=>{
+  image.addEventListener("error",()=>{
+   console.warn(`Could not load gallery image: ${image.src}`);
+   const galleryItem=image.closest(".gallery-item");
+   if(galleryItem){ galleryItem.remove(); }
+  },{once:true});
+ });
  document.getElementById("modal").classList.add("open");document.getElementById("modal").setAttribute("aria-hidden","false");
 }
 function closeDetail(){document.getElementById("modal").classList.remove("open");document.getElementById("modal").setAttribute("aria-hidden","true")}
